@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--Import of local CSS file-->
+
+<link rel="stylesheet" href="style.css">
+
+    <title>Bootstrap</title>
+    <style>
+        div {
+            border: 1px solid; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mt-4 p-5 bg-black text-white text-center rounded">
+          <h1>Bootstrap Tutorial</h1>
+          <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+          responsive, mobile-first projects on the web.</p>
+        </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4">
+                <h1>my title</h1>
+            </div>
+
+                <div class="col-sm">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque molestias cum exercitationem, consequatur, expedita doloremque numquam, quam odit iusto quisquam repudiandae repellendus harum ea recusandae placeat aperiam et reprehenderit autem. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h1>min titel</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos soluta, accusamus, consequuntur eius odio, rem sunt ex nobis dicta expedita obcaecati debitis harum animi necessitatibus. Earum beatae nobis tempore.</p>
+    </div>
+
+<!-- Row inuti en kolumn-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+       <!-- skapa en ny row inuti detta fält-->
+       <div class="row">
+        <div class="col-md">
+            <p>det första inre fältet</p>
+        </div>
+        <div class="col-md">
+            <p>det andra inre fältet</p>
+        </div>
+       </div>
+    </div>
+        <div class="col-sm-4">
+            <p>litet fält</p>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-primary list-group-item active">First item </li>
+                <li class="list-group-item list-group-item-warning">second item </li>
+                <li class="list-group-item list-group-item-danger">third item </li>
+            </ul>
+        </div>
+    </div>
+        <div class="row">
+            <p>bottom row</p>
+        </div>
+    </div>
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis non, nobis architecto officiis maiores inventore facilis sapiente rerum! Repellat omnis porro eum esse consequatur incidunt quos harum magni voluptates!</p>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+<!-- här börjar Grid exempel-->
+  <div class="container"> <!--denna del är fri från bootstrapresponsiviteten, den är statisk-->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="gridcontainer"> 
+                <div class="item1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas distinctio maiores excepturi laboriosam reiciendis consequatur alias, ipsa vitae inventore ea quis earum beatae quod assumenda perspiciatis officia enim accusamus hic.
+                </div>
+                <div class="item2">
+            Vänster box text
+        </div>
+        <div class="item2-2">
+            Höger box text
+        </div>
+        <div class="itemBigBox">
+            Detta är en Big Box som sträcker sig flera rader och kolumner. Det finns innehåll vid sidorna. 
+        </div>
+        <div class="itemTopLeft">
+            Top left of Big Box
+        </div>
+        <div class="itemBottomLeft">
+            Bottom Left of Big Box
+        </div>
+    </div>
+</div>
+    <div class="col-sm-6">
+        <div class="outerflexContainer">
+
+        <div class="innerflexContainer inner1">
+            <div class="flexitem" style="align-items: flex-end;"> Between</div>
+            <img src="Bilder/katt.jpg" alt="En katt" class="flexItem">
+            <img src="Bilder/katt.jpg" alt="En katt" class="flexItem">
+        </div>
+
+        <div class="innerflexContainer inner2">
+            <div class="flexitem"> Around</div>
+            <img src="Bilder/katt.jpg" alt="En katt" class="flexItem">
+            <img src="Bilder/katt.jpg" alt="En katt" class="flexItem">
+        </div>
+
+        <div class="innerflexContainer inner3">
+            <div class="flexitem"> Evenly</div>
+            <img src="Bilder/katt.jpg" alt="En katt" class="flexItem">
+            <img src="Bilder/katt.jpg" alt="En katt" class="flexItem">
+        </div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
